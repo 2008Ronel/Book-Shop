@@ -1,0 +1,183 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+th,
+td {
+  text-align: center;
+  padding: 10px 20px;
+  border: 1px solid #000;
+}
+
+th {
+  color: #826c8b;
+  background-color: #d0b8a8;
+}
+
+td {
+  color: #826c8b;
+  background-color: #f8ede3;
+}
+
+.addBook,
+.Search {
+  background-color: #9af4bb;
+  margin-left: 50%;
+  margin-bottom: 10px;
+  transition-duration: 0.4s;
+  font-size: 1.5em;
+  padding: 50px;
+}
+
+.addBook:hover {
+  background-color: #25f911;
+  color: #d58e00;
+}
+
+.Search:hover {
+  background-color: #25f911;
+  color: #d58e00;
+}
+
+button {
+  margin-right: 10px;
+  padding: 20px;
+  font-size: 1.5em;
+  margin-top: 20px;
+  transition-duration: 0.4s;
+  background-color: #00c8ff;
+}
+
+button:hover {
+  background-color: #0800ff;
+  color: #fe0a0a;
+}
+
+.Read {
+  transition-duration: 0.4s;
+  background-color: #00c8ff;
+}
+.Read:hover {
+  background-color: #0800ff;
+  color: #fe0a0a;
+}
+
+.Update {
+  transition-duration: 0.4s;
+  background-color: #f49a9a;
+}
+.Update:hover {
+  background-color: #fe0a0a;
+  color: #0800ff;
+}
+
+.Delete {
+  transition-duration: 0.4s;
+  background-color: #f3f49a;
+}
+.Delete:hover {
+  background-color: #fe940a;
+  color: #ffffff;
+}
+
+.modal {
+  background-color: #dfd3c3;
+  padding: 10px;
+  position: absolute;
+  top: 0px;
+  left: 150%;
+  height: 80vh;
+  min-width: 300px;
+  text-align: center;
+}
+.modal.open {
+  left: 50%;
+  transition: left 0.5s;
+}
+.modal h3 {
+  color: #826c8b;
+  text-decoration: overline;
+  text-transform: capitalize;
+}
+.modal h4 span {
+  color: #826c8b;
+  font-size: 4em;
+}
+
+h5 {
+  color: #000000;
+  font-size: 2em;
+}
+.modal > p {
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+input {
+  margin-bottom: 15px;
+  font-size: 2em;
+}
+
+.rating {
+  background-color: #00c8ff;
+}
+
+.user-msg {
+  position: fixed;
+  bottom: -100px;
+  right: 10px;
+  background-color: #111;
+  padding: 10px;
+}
+.user-msg.open {
+  bottom: 10px;
+  transition: bottom 0.5s;
+}
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04aa6d; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04aa6d; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.filter {
+  margin-left: 52%;
+  font-size: 30px;
+}
